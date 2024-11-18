@@ -2,11 +2,11 @@ import { Injectable } from '@nestjs/common';
 
 @Injectable()
 export class CatService {
-  getHello(): string {
+  public getHello(): string {
     return 'Meow - Meow';
   }
 
-  introduce(): string {
+  public introduce(): string {
     return 'Hey, I am Tom!';
   }
 }

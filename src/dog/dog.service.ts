@@ -2,11 +2,15 @@ import { Injectable } from '@nestjs/common';
 
 @Injectable()
 export class DogService {
-  getHello(): string {
+  public getHello(): string {
     return 'Woof - Woof';
   }
 
-  introduce(): string {
+  public introduce(): string {
     return 'Hey, i am Rex';
+  }
+
+  public modifyDetail(): string {
+    return 'Successfully Modified';
   }
 }
